@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="1312.0" style="-fx-background-color: #783939;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx_test.Appointment_PageController">
+   <children>
+      <Label layoutX="501.0" layoutY="26.0" text="  Book Appointment" textFill="WHITE">
+         <font>
+            <Font name="Georgia Bold" size="34.0" />
+         </font>
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@calendar_plus_40px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <JFXButton fx:id="book_btn" buttonType="RAISED" layoutX="255.0" layoutY="538.0" onAction="#book" text="Book Appointment" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="45.0" fitWidth="47.0">
+               <image>
+                  <Image url="@save_64px.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <Pane layoutX="43.0" layoutY="165.0" prefHeight="361.0" prefWidth="1226.0" style="-fx-background-color: #402C2C;">
+         <children>
+            <Label layoutX="16.0" layoutY="22.0" text="Patient Name " textFill="WHITE">
+               <font>
+                  <Font name="Georgia" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="130.0" text="Select Date" textFill="WHITE">
+               <font>
+                  <Font name="Georgia" size="14.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="jcd" layoutX="152.0" layoutY="63.0" prefHeight="25.0" prefWidth="123.0" style="-fx-background-color: #FFFFFF;" unFocusColor="WHITE" />
+            <Label layoutX="18.0" layoutY="67.0" text="Select Doctor" textFill="WHITE">
+               <font>
+                  <Font name="Georgia" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lpnm" layoutX="179.0" layoutY="22.0" prefHeight="16.0" prefWidth="229.0" textFill="WHITE">
+               <font>
+                  <Font name="Georgia" size="14.0" />
+               </font>
+            </Label>
+            <JFXDatePicker fx:id="datep" defaultColor="WHITE" layoutX="152.0" layoutY="126.0" style="-fx-background-color: #FFFFFF;" />
+            <JFXTimePicker fx:id="timep" defaultColor="WHITE" layoutX="528.0" layoutY="63.0" style="-fx-background-color: #FFFFFF;" />
+            <Label layoutX="421.0" layoutY="72.0" text="Select Time" textFill="WHITE">
+               <font>
+                  <Font name="Georgia" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="50.0" layoutY="121.0" prefHeight="26.0" prefWidth="95.0" text="RFID No" textFill="WHITE">
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@rfid_signal_26px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <JFXTextField fx:id="trfid" layoutX="131.0" layoutY="116.0" style="-fx-text-fill: #FFFFFF;" unFocusColor="WHITE" />
+      <JFXButton fx:id="home_btn" layoutX="543.0" layoutY="538.0" onAction="#home" text="Home" textFill="WHITE">
+         <graphic>
+            <ImageView fx:id="home">
+               <image>
+                  <Image url="@home_page_50px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Label fx:id="lpnm1" layoutX="805.0" layoutY="141.0" prefHeight="16.0" prefWidth="39.0" text="Date" textFill="WHITE">
+         <font>
+            <Font name="Georgia" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="ld" layoutX="864.0" layoutY="142.0" prefHeight="16.0" prefWidth="103.0" text="Date" textFill="WHITE">
+         <font>
+            <Font name="Georgia" size="14.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btn" buttonType="RAISED" layoutX="283.0" layoutY="126.0" onAction="#se" text="Click Here " textFill="WHITE" />
+   </children>
+</AnchorPane>

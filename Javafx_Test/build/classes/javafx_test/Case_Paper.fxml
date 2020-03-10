@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="663.0" prefWidth="1316.0" style="-fx-background-color: #783939;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx_test.Case_PaperController">
+   <children>
+      <Label layoutX="514.0" layoutY="33.0" text="Case Paper" textFill="WHITE">
+         <font>
+            <Font name="Georgia Bold" size="42.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="38.0" fitWidth="34.0">
+               <image>
+                  <Image url="@paper_64px.png" />
+               </image>
+            </ImageView>
+         </graphic></Label>
+      <Pane layoutX="52.0" layoutY="99.0" prefHeight="400.0" prefWidth="1202.0" style="-fx-background-color: #402C2C;">
+         <children>
+            <Label layoutX="34.0" layoutY="200.0" text="Addiction" textFill="WHITE" />
+            <Label layoutX="697.0" layoutY="121.0" text="Previous Medical Problems" textFill="WHITE" />
+            <Label layoutX="698.0" layoutY="193.0" text="Previous Medical Prescription" textFill="WHITE" />
+            <Label layoutX="27.0" layoutY="28.0" text="Current  Medical Problem Details" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <JFXTextArea fx:id="ts" layoutX="116.0" layoutY="60.0" prefHeight="49.0" prefWidth="201.0" style="-fx-text-fill: #FFFFFF;" unFocusColor="#fcfcfc" />
+            <Label layoutX="37.0" layoutY="69.0" text="Symptoms" textFill="WHITE">
+               <font>
+                  <Font name="Georgia" size="12.0" />
+               </font>
+            </Label>
+            <JFXTextArea fx:id="pme" layoutX="867.0" layoutY="120.0" prefHeight="49.0" prefWidth="201.0" style="-fx-text-fill: #FFFFFF;" unFocusColor="#fcfcfc" />
+            <Label layoutX="37.0" layoutY="134.0" text="Allergies" textFill="WHITE">
+               <font>
+                  <Font name="Georgia" size="12.0" />
+               </font>
+            </Label>
+            <JFXTextArea fx:id="ta" layoutX="113.0" layoutY="134.0" prefHeight="49.0" prefWidth="201.0" style="-fx-text-fill: #FFFFFF;" unFocusColor="#fcfcfc" />
+            <JFXTextArea fx:id="pms" layoutX="870.0" layoutY="194.0" prefHeight="49.0" prefWidth="201.0" style="-fx-text-fill: #FFFFFF;" unFocusColor="#fcfcfc" />
+            <JFXTextArea fx:id="tad" layoutX="113.0" layoutY="201.0" prefHeight="49.0" prefWidth="201.0" style="-fx-text-fill: #FFFFFF;" unFocusColor="#fcfcfc" />
+            <Label layoutX="36.0" layoutY="284.0" text="Comments" textFill="WHITE" />
+            <JFXTextArea fx:id="tc" layoutX="113.0" layoutY="284.0" prefHeight="49.0" prefWidth="201.0" style="-fx-text-fill: #FFFFFF;" unFocusColor="#fcfcfc" />
+         </children>
+      </Pane>
+      <Label fx:id="lrfid" layoutX="141.0" layoutY="76.0" text="Number Should be Displayed Here" textFill="WHITE" />
+      <Label layoutX="56.0" layoutY="70.0" prefHeight="26.0" prefWidth="95.0" text="RFID No" textFill="WHITE">
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@rfid_signal_26px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <JFXButton fx:id="home_btn" layoutX="629.0" layoutY="544.0" onAction="#home" text="Home" textFill="WHITE">
+         <graphic>
+            <ImageView fx:id="home">
+               <image>
+                  <Image url="@home_page_50px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="pre_btn" layoutX="835.0" layoutY="545.0" onAction="#pres" text="Prescription" textFill="WHITE">
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@pill_bottle_48px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="save" layoutX="428.0" layoutY="551.0" onAction="#case_register" text="Save" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="37.0" fitWidth="41.0">
+               <image>
+                  <Image url="@save_64px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXComboBox fx:id="dcb1" layoutX="983.0" layoutY="63.0" prefHeight="25.0" prefWidth="156.0" style="-fx-background-color: #FFFFFF;" unFocusColor="WHITE" />
+      <Label layoutX="901.0" layoutY="74.0" text="Doctor Name" textFill="WHITE" />
+   </children>
+</AnchorPane>
