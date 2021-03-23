@@ -1,5 +1,4 @@
 # RFID
-Trial
 This Project demonstrates integration of RFID technology with Medical service or Electronic Medical Record (EMR).
 This Consists Main Four Modules :-
                                     1)Reception Module
